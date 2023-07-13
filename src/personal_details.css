@@ -1,0 +1,270 @@
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+header, body, footer{
+    margin: 0;
+    padding: 2px;
+}
+
+body{
+    background-color: #eef5fd;
+}
+
+header{
+    display: flex;
+    height: 7vh;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#search-bar{
+    height: 15px;
+    border: none;
+    padding: 5px;
+}
+
+/* Form Css Below */
+
+form{
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 15px;
+    justify-content: space-between;
+    padding: 50px;
+    margin: 0 25px 0 25px;
+}
+
+#main-container .form-heading{
+    display: flex;
+    font-size: 20px;
+    font-weight: 1000;
+    /* position: relative; */
+    text-align: start;
+    margin: 0 0 0 25px;
+    padding: 50px;
+}
+
+.side-icon{
+    margin-left: auto;
+}
+
+.side-icon img{
+    padding: 5px;
+}
+
+form{
+    display: grid;
+    grid-area: auto;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    background-color: #eef5fd;
+}
+
+.gender-form, .address-details{
+    grid-column: span 2;
+    /* display: flex; */
+}
+
+.form-add-btn{
+    display: flex;
+    padding-top: 40px;
+    justify-content: end;
+}
+
+.add-btn{
+    width: 70px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: transparent;
+}
+
+.dependents-details{
+    padding-top: 25px;
+}
+
+.no-btn{
+    margin: 10px 10px 0 0;
+    width: 50px;
+    height: 35px;
+    border: 1px solid #445161;
+    background-color: transparent;
+    border-radius: 15px;
+    color: rgba(92, 82, 82, 0.425);
+    font-weight: bolder;
+}
+
+/* .yes-btn{
+    margin: 10px 10px 0 0 ;
+    width: 75px;
+    height: 35px;
+    border: 1px solid #4689dc;
+    background-color: #7bafef;
+    border-radius: 15px;
+    color: white;
+    font-weight: bolder;
+} */
+
+/* Yes/No buttons CSS */
+
+.yes-btn{
+    margin: 10px 10px 0 0 ;
+    width: 75px;
+    border: 1px solid #4689dc;
+    background-color: #7bafef;
+    border-radius: 15px;
+    color: white;
+    height: 35px;
+    font-weight: bolder;
+}
+
+.yes-btn:disabled {
+    pointer-events: none;
+}
+
+.yes-btn:hover {
+    color: #fff;
+    background-color: #4689dc;
+    box-shadow: rgba(47, 134, 206, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+}
+
+.yes-btn:active {
+    box-shadow: none;
+    transform: translateY(0);
+}
+
+
+.no-btn{
+    margin: 10px 10px 0 0 ;
+    width: 75px;
+    border: 1px solid #4689dc;
+    background-color: #7bafef;
+    border-radius: 15px;
+    color: white;
+    height: 35px;
+    font-weight: bolder;
+}
+
+.no-btn:disabled {
+    pointer-events: none;
+}
+
+.no-btn:hover {
+    color: #fff;
+    background-color: #4689dc;
+    box-shadow: rgba(47, 134, 206, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+}
+
+.no-btn:active {
+    box-shadow: none;
+    transform: translateY(0);
+}
+
+/* Ends here yes no button */
+
+form span{
+    color: rgb(69, 62, 62);
+    font-weight: bolder;
+}
+
+form input, form textarea{
+    margin-top: 5px;
+    border-radius: 5px;
+    border: #dfd9d9 solid;
+}
+
+label{
+    margin-left: 0;
+    margin: 5px 37px 0 5px;
+}
+
+.dependents-box{
+    display: flex;
+    margin: 5px 0 5px 0;
+}
+
+#icon1, #icon2, #icon3, #icon4, #icon5{
+    margin: 5px 35px 0 5px;
+    background-color: transparent;
+    border-radius: 5px;
+    border-color: aliceblue;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 20px;
+}
+
+input[type="radio"]{
+    margin: 10px;
+}
+
+input[type="text"], input[type="date"], input[type="email"]{
+    width: 300px;
+    height: 25px;
+    border-radius: 10px;
+    border: #dfd9d9 solid;
+}
+
+input[type="text"]:active, input[type="date"]:active, textarea:active, input[type="text"]:hover, input[type="date"]:hover, textarea:hover{
+    border: #518bd2 solid;
+}
+
+/* progressbar css */
+
+.probar{
+    background-color: #4689dc;
+    border-radius: 4mm;
+    width: 90%;
+    height: 70px;
+    text-align: center;
+    margin-bottom: 50px;
+    margin-left: 60px;
+}
+
+.progress-bar {
+    background-color: #4689dc;
+    width: 90%;
+    margin-left: 4%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .circle {
+    margin-top: 15px;
+    margin-left: 5%;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    color: rgb(141, 141, 141);
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+  }
+
+  .circle.completed {
+    background-color: #0d74f5;
+    color: white;
+  }
+
+  .thread.completed {
+    background-color: #0d74f5;
+  }
+
+
+  .thread {
+    margin-top: 15px;
+    margin-left: 5%;
+    flex: 1;
+    height: 2px;
+    background-color: white;
+  }
+
+  .label {
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(232, 232, 234);
+    text-align: center;
+  }
+

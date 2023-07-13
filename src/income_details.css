@@ -1,0 +1,203 @@
+/*Basic css here*/
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+header, body, footer{
+    margin: 0;
+    padding: 2px;
+}
+
+body{
+    background-color: #eef5fd;
+}
+
+header{
+    display: flex;
+    height: 7vh;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#search-bar{
+    height: 15px;
+    border: none;
+    padding: 5px;
+}
+
+/* Form Css Below */
+
+form{
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 15px;
+    justify-content: space-between;
+    padding: 50px;
+    margin: 0 25px 0 25px;
+}
+
+#main-container .form-heading{
+    display: flex;
+    font-size: 20px;
+    font-weight: 1000;
+    /* position: relative; */
+    text-align: start;
+    margin: 0 0 0 25px;
+    padding: 50px;
+}
+
+.side-icon{
+    margin-left: auto;
+}
+
+.side-icon img{
+    padding: 5px;
+}
+
+form{
+    display: grid;
+    grid-area: auto;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 80px);
+    background-color: #eef5fd;
+}
+
+form span{
+    color: rgb(69, 62, 62);
+    font-weight: bolder;
+}
+
+form input, form textarea{
+    margin-top: 5px;
+    border-radius: 5px;
+    border: #dfd9d9 solid;
+}
+
+input[type="text"], input[type="date"]{
+    width: 250px;
+    height: 25px;
+    border-radius: 10px;
+    border: #dfd9d9 solid;
+}
+
+input[type="text"]:active, input[type="date"]:active, input[type="text"]:hover, input[type="date"]:hover{
+    border: #518bd2 solid;
+}
+
+/* Footer Css below */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    /* padding: 20px; */
+    /* color: black; */
+    background-color: white;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 90%;
+    margin-top: auto;
+    margin-left: 11.1%;
+    height: 8vh;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 20px;
+}
+
+.back-btn{
+    margin: 5px 15px;
+    border-radius: 15px;
+    width: 100px;
+    height: 35px;
+    font-weight: bolder;
+    border: 1.5px solid rgb(33, 31, 101);
+    background-color: transparent;
+    border-radius: 15px;
+    color: rgb(23, 22, 71);
+}
+
+.next-btn{
+    margin: 5px 23px;
+    float: right;
+    border: 1.5px solid #4689dc;
+    background-color: #7bafef;
+    border-radius: 15px;
+    color: white;
+    width: 100px;
+    height: 35px;
+    font-weight: bolder;
+}
+
+.next-btn:disabled {
+    pointer-events: none;
+}
+
+.next-btn:hover {
+    color: #fff;
+    background-color: #4689dc;
+    box-shadow: rgba(47, 134, 206, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+}
+
+.next-btn:active {
+    box-shadow: none;
+    transform: translateY(0);
+}
+
+/* progressbar css */
+
+.probar{
+    background-color: #4689dc;
+    border-radius: 4mm;
+    width: 90%;
+    height: 70px;
+    text-align: center;
+    margin-bottom: 50px;
+    margin-left: 60px;
+}
+
+.progress-bar {
+    background-color: #4689dc;
+    width: 90%;
+    margin-left: 4%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .circle {
+    margin-top: 15px;
+    margin-left: 5%;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    color: rgb(141, 141, 141);
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+  }
+
+  .circle.completed {
+    background-color: #0d74f5;
+    color: white;
+  }
+
+  .thread.completed {
+    background-color: #0d74f5;
+  }
+
+
+  .thread {
+    margin-top: 15px;
+    margin-left: 5%;
+    flex: 1;
+    height: 2px;
+    background-color: white;
+  }
+
+  .label {
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(232, 232, 234);
+    text-align: center;
+  }

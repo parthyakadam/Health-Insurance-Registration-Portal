@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="/src/lead.component.css">
+    <link rel="stylesheet" href="table.css">
+    <link rel="stylesheet" href="header_navbar.css">
+    <!-- script tag to get icons from fontawesome.com -->
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>  
+    <link rel="stylesheet" href="/Dump/Side Navbar Practice/sidebar.css">
+    
+    <script src="demo.js" defer></script>
+</head>
+<header>
+    <nav class="head-nav">
+        <div class="head-ctn">
+            <h2>.Ins.   Agent's Portal</h2>
+
+            <div class="search-bar">
+                <img src="/Images/search-icon.png" id="search-icon">
+                <input type="search" placeholder="Search...">
+            </div>
+
+            <div class="head-icons">
+                <img src="/Images/bell-iconpng.png">
+                <img src="/Images/profile.png">
+            </div>
+        </div>
+    </nav>
+</header>
+<body>
+
+    <nav class="header">
+        <div class="side-nav">
+            <ul class="nav-links">
+                <li><a href="#"><i class="fa-solid fa-house-user"></i><p>Dashboard</p></a></li>
+                <li><a href="#"><i class="fa-solid fa-message"></i><p>Messages</p></a></li>
+                <li><a href="#"><i class="fa-solid fa-heart-pulse"></i><p>Checkup</p></a></li>
+                <li><a href="#"><i class="fa-solid fa-arrow-rotate-left"></i><p>Renewal</p></a></li>
+                <li><a href="#"><i class="fa-solid fa-file"></i><p>Reports</p></a></li>
+                <li><a href="#"><i class="fa-solid fa-circle-question"></i><p>FAQ List</p></a></li>
+                <li><a href="login.html"><i class="fa-solid fa-right-from-bracket"></i><p>Log Out</p></a></li>
+                <!-- <li><a href="#"><i class="fa-solid fa-right-from-bracket"></i><button id="log-out" type="submit">Log Out</button></li> -->
+                <div class="active"></div>
+            </ul>
+        </div>
+    </nav>
+
+    <div id="main-container" style="margin-left: 10%;">
+        <div class="margin">
+            <img class="left-arrow" src="/Images/arrow_left.png"><p>New Leads</p>
+        </div>
+        <table id="table-container">
+            <tr>
+                <select name="Policies" class="spacing">
+                    <option value=" " disabled selected>All Policies</option>
+                    <option value="Health">Health</option>
+                    <option value="Documents">Documents</option>
+                    <option value="Gallery">Gallery</option>
+                </select>
+
+                <select name="Policies" class="spacing">
+                    <option value=" " disabled selected>Reccent</option>
+                    <option value="Health">Health</option>
+                    <option value="Documents">Documents</option>
+                    <option value="Gallery">Gallery</option>
+                </select>
+
+                <button class="spacing">Qualified</button>
+                <button class="spacing">Interested</button>
+                <button id="new-lead" type="submit">ADD NEW LEAD</button>
+            </tr>
+
+            <tr>
+                <th id="table-icon"></th></th>
+                <th>Name</th>
+                <th>Last Contacted</th>
+                <th>Product</th>
+                <th>Email</th>
+                <th>Contact</th>
+                <th>Lead Stage</th>
+                <th> </th>
+            </tr>
+
+            <tr>
+                <td id="table-icon"><img src="/Images/user.png"></td>
+                <td>Kirti Gupta</td>
+                <td>2 days ago</td>
+                <td>Team Insurance</td>
+                <td>abc@gmail.com</td>
+                <td>1112223334</td>
+                <td class="clr-green">Contacted</td>
+                <td><img src="/Images/message.png"></td>
+            </tr>
+
+            <tr>
+                <td id="table-icon"></th><img src="/Images/user.png"></td>
+                <td>Kirti Gupta</td>
+                <td>2 days ago</td>
+                <td>Team Insurance</td>
+                <td>abc@gmail.com</td>
+                <td>1112223334</td>
+                <td class="clr-green">Contacted</td>
+                <td><img src="/Images/message.png"></td>
+            </tr>
+
+            <tr>
+                <td id="table-icon"></th><img src="/Images/user.png"></td>
+                <td>Kirti Gupta</td>
+                <td>2 days ago</td>
+                <td>Team Insurance</td>
+                <td>abc@gmail.com</td>
+                <td>1112223334</td>
+                <td class="clr-green">Contacted</td>
+                <td><img src="/Images/message.png"></td>
+            </tr>
+
+            <tr>
+                <td id="table-icon"></th><img src="/Images/user.png"></td>
+                <td>Kirti Gupta</td>
+                <td>2 days ago</td>
+                <td>Team Insurance</td>
+                <td>abc@gmail.com</td>
+                <td>1112223334</td>
+                <td class="clr-green">Contacted</td>
+                <td><img src="/Images/message.png"></td>
+            </tr>
+
+            <tr>
+                <td id="table-icon"></th><img src="/Images/user.png"></td>
+                <td>Kirti Gupta</td>
+                <td>2 days ago</td>
+                <td>Team Insurance</td>
+                <td>abc@gmail.com</td>
+                <td>1112223334</td>
+                <td class="clr-green">Contacted</td>
+                <td><img src="/Images/message.png"></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

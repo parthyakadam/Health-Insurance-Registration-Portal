@@ -1,0 +1,53 @@
+body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 100vh;
+    background-color: #333;
+    transition: width 0.3s;
+    overflow: hidden;
+  }
+  
+  .navbar:hover {
+    width: 200px;
+  }
+  
+  .navbar__icon {
+    display: block;
+    width: 100%;
+    height: 60px;
+    background-color: #777;
+    cursor: pointer;
+  }
+  
+  .navbar__menu {
+    list-style: none;
+    margin: 0;
+    padding: 20px;
+    display: none;
+  }
+  
+  .navbar:hover .navbar__menu {
+    display: block;
+  }
+  
+  .navbar__menu li {
+    margin-bottom: 10px;
+  }
+  
+  .navbar__menu a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .content {
+    margin-left: 200px; /* Adjust this value to match the expanded navbar width */
+    padding: 20px;
+  }
+  

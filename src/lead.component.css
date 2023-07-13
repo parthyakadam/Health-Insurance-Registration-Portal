@@ -1,0 +1,149 @@
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+header, body, footer{
+    margin: 0;
+    padding: 2px;
+}
+
+#head-text{
+    margin-left: 10px;
+}
+
+#search-bar{
+    height: 15px;
+    border: none;
+    padding: 5px;
+}
+
+.flex form{
+    height: 15px;
+}
+
+.margin{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    align-content: center;
+    font-weight: bold;
+}
+
+#search-icon{
+    height: 15px;
+    margin: 20px 0px 0px 10px;
+    padding: 0px;
+    border: none;
+}
+
+header div img{
+    height: 20px;
+    margin: 10px;
+}
+
+.left-arrow{
+    height: 40px;
+    margin: 0;
+}
+
+header{
+    display: flex;
+    height: 7vh;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 10%;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+
+li a{
+    display: block;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+#main-container{
+    padding: 15px;
+}
+
+#new-lead{
+    margin: 5px 15px;
+    background-color: #7bafef;
+    color: white;
+    float: right;
+}
+
+.flex{
+    display: flex;
+}
+
+.align-center{
+    align-items: center;
+}
+
+.justify-center{
+    justify-content: center;
+}
+
+.space-around{
+    justify-content: space-around;
+}
+
+.spacing{
+    margin: 5px;
+}
+
+.float-right{
+    float: right;
+}
+
+/* .side-navbar{
+    margin-top: 15px;
+} */
+
+.clr-green{
+    color: green;
+}
+
+button{
+    border: 1.5px solid #4689dc;
+    background-color: transparent;
+    border-radius: 15px;
+    color: #4689dc;
+    width: 150px;
+    height: 35px;
+}
+
+button:disabled {
+    pointer-events: none;
+}
+  
+button:hover {
+    color: #fff;
+    background-color: #4689dc;
+    box-shadow: rgba(47, 134, 206, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+}
+  
+button:active {
+    box-shadow: none;
+    transform: translateY(0);
+}
+
+select{
+    border: none;
+    border-radius: 15px;
+    padding: 10px;
+    height: 35px;
+    width: 150px;
+    background-color: #e7f5fe;
+}
+
+/* Side navbar css */
